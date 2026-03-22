@@ -1,1 +1,22 @@
 go get github.com/gin-gonic/gin
+
+/model
+Cria a entidade base Product no package model, com tags JSON para serialização nas respostas da API.
+
+/cmd
+Configura o servidor usando o framework gin e adiciona a rota /ping para teste de saúde da API.
+injeta ProductUseCase e ProductController e adiciona rota /products"
+Cria o usecase
+Injeta no controller
+egistra a rota /products
+
+/controller
+Cria o controller com handler GetProducts, retornando dados mockados para testar a estrutura da API antes da integração com banco.
+
+/usecase
+Define a camada de regra de negócio (usecase), mesmo ainda sem lógica implementada.
+Prepara o projeto para desacoplamento entre controller e acesso a dados.
+
+/db
+Cria função ConnectDB usando database/sql para conectar no PostgreSQL.
+Inclui validação com Ping() e log de sucesso.
