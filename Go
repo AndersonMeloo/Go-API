@@ -1,0 +1,13 @@
+nil é um valor pré-definido em Go que representa a ausência de um valor ou a falta de um valor válido. Ele é usado para indicar que uma variável ou um ponteiro não tem um valor atribuído ou que uma função não retornou um resultado válido.
+
+nil em Go (Golang) significa “não tem valor” / “está vazio”
+EXEMPLO: 
+err == nil → deu certo
+err != nil → deu erro
+
+panic: Função que interrompe imediatamente a execução do programa ao ocorrer um erro crítico.
+
+Ponteiros *
+Armazena o endereço de memória de outra variável. 
+Permite acessar e modificar o valor da variável apontada.
+
