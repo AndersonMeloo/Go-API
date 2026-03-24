@@ -1,4 +1,5 @@
 go get github.com/gin-gonic/gin
+go get github.com/lib/pq
 
 /model
 Cria a entidade base Product no package model, com tags JSON para serialização nas respostas da API.
@@ -20,3 +21,4 @@ Prepara o projeto para desacoplamento entre controller e acesso a dados.
 /db
 Cria função ConnectDB usando database/sql para conectar no PostgreSQL.
 Inclui validação com Ping() e log de sucesso.
+
