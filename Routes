@@ -1,0 +1,9 @@
+Criar Produto:
+POST: localhost:8000/product
+{
+    "name": "",
+    "price": Valor a ser inserido
+}
+
+Buscar Produtos
+GET: localhost:8000/products
