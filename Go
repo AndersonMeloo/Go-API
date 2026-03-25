@@ -11,3 +11,15 @@ Ponteiros *
 Armazena o endereço de memória de outra variável. 
 Permite acessar e modificar o valor da variável apontada.
 
+QueryRow(): Executa a query esperando uma única linha
+query.QueryRow(product.Name, product.Price): Envia os dados (Name, Price) para o banco e Espera um resultado só (no caso da estrutura é o id)
+
+Scan():
+Pega o resultado e coloca na variável
+Se o banco retornar um resultado, ele é armazenado na variável id. Se não houver resultado ou ocorrer um erro, a variável id permanecerá inalterada e o erro será tratado.
+
+QueryRow → executa e espera 1 resultado
+Scan → pega esse resultado
+Close → fecha e limpa recursos
+
+ctx: É o contexto da requisição HTTP, usado para controlar o tempo de vida da requisição e passar informações entre os middlewares e handlers. Ele é utilizado para cancelar a requisição, definir prazos de expiração, e compartilhar dados entre diferentes partes do código durante o processamento da requisição.
