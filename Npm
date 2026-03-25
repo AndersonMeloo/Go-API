@@ -1,6 +1,9 @@
 go get github.com/gin-gonic/gin
 go get github.com/lib/pq
 
+REPOSITORY: Fala com o Banco
+USECASE: Regra de Negócio. Chama o Repository.
+
 /model
 Cria a entidade base Product no package model, com tags JSON para serialização nas respostas da API.
 
