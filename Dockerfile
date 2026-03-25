@@ -1,7 +1,7 @@
 # golang:latest: Atualiza a imagem base para a última versão do Go
 # FROM golang:latest
 
-FROM golang:1.22-alpine
+FROM golang:1.26-alpine
 
 # Define o diretório de trabalho dentro do container
 WORKDIR /go/src/app
